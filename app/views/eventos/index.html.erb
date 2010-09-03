@@ -1,0 +1,10 @@
+<h1>Listagem de Eventos</h1>
+
+	<% for evento in @eventos %>
+		
+		<h2>
+			<%= evento.categoria.nome_categoria %> -
+			<%= link_to evento.titulo, evento_path(evento) %>
+		</h2>			
+
+	<% end %>

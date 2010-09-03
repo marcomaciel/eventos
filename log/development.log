@@ -1,0 +1,391 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-09-01 20:42:45) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-01 20:44:54) [GET]
+
+ActionController::RoutingError (No route matches "/eventos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-01 20:45:45) [GET]
+
+ActionController::RoutingError (No route matches "/eventos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-01 20:45:45) [GET]
+
+ActionController::RoutingError (No route matches "/eventos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:46:05) [GET]
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:46:11) [GET]
+Rendering eventos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:47:17) [GET]
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:48:16) [GET]
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20100901234902)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "categorias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome_categoria" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901234902')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categorias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20100901234902)
+Migrating to CreateEventos (20100901235031)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "eventos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "data" datetime, "descricao" text, "categoria_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901235031')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categorias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("eventos")[0m
+  [4;36;1mCategoria Create (0.0ms)[0m   [0;1mINSERT INTO "categorias" ("created_at", "updated_at", "nome_categoria") VALUES('2010-09-01 23:51:23', '2010-09-01 23:51:23', 'Palestra')[0m
+  [4;35;1mCategoria Create (0.0ms)[0m   [0mINSERT INTO "categorias" ("created_at", "updated_at", "nome_categoria") VALUES('2010-09-01 23:51:48', '2010-09-01 23:51:48', 'Curso')[0m
+  [4;36;1mEvento Create (0.0ms)[0m   [0;1mINSERT INTO "eventos" ("data", "created_at", "titulo", "updated_at", "descricao", "categoria_id") VALUES('2008-03-01 00:00:00', '2010-09-01 23:52:48', 'Desenvolvimento agil com Rails', '2010-09-01 23:52:48', 'Palestra sobre desenvolvimento deaplicacoes para web.', 1)[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:53:06) [GET]
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:54:54) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:57:16) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: eventos: SELECT * FROM "eventos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: eventos: SELECT * FROM "eventos" ):
+  app/controllers/eventos_controller.rb:4:in `index'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20100901234902)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "categorias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome_categoria" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901234902')[0m
+Migrating to CreateEventos (20100901235031)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "eventos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "data" datetime, "descricao" text, "categoria_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901235031')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categorias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("eventos")[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 20:58:21) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/eventos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20100901234902)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "categorias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome_categoria" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901234902')[0m
+Migrating to CreateEventos (20100901235031)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "eventos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "data" datetime, "descricao" text, "categoria_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100901235031')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categorias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("eventos")[0m
+  [4;36;1mCategoria Create (0.0ms)[0m   [0;1mINSERT INTO "categorias" ("created_at", "updated_at", "nome_categoria") VALUES('2010-09-02 00:01:30', '2010-09-02 00:01:30', 'Palestra')[0m
+  [4;35;1mCategoria Create (0.0ms)[0m   [0mINSERT INTO "categorias" ("created_at", "updated_at", "nome_categoria") VALUES('2010-09-02 00:01:35', '2010-09-02 00:01:35', 'Curso')[0m
+  [4;36;1mEvento Create (0.0ms)[0m   [0;1mINSERT INTO "eventos" ("data", "created_at", "titulo", "updated_at", "descricao", "categoria_id") VALUES('2008-03-01 00:00:00', '2010-09-02 00:02:12', 'Desenvolvimento agil com Rails', '2010-09-02 00:02:12', 'Palestra sobre desenvolvimento de aplicacoes para web.', 1)[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:02:16) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:02:32) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:02:43) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:03:27) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:03:30) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:05:52) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:05:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" WHERE ("eventos"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template eventos/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:06:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/eventos/show/1]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:06:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" WHERE ("eventos"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/show/1]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:07:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/show/1]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:08:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" WHERE ("eventos"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/show/1]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:08:28) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+  [4;35;1mEvento Create (0.0ms)[0m   [0mINSERT INTO "eventos" ("data", "created_at", "titulo", "updated_at", "descricao", "categoria_id") VALUES('2010-05-11 00:00:00', '2010-09-02 00:10:47', 'Ruby on Rails para Iniciantes', '2010-09-02 00:10:47', 'Palestra sobre desenvolvimento de aplicacoes para web.', 1)[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:11:33) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:11:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/2]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:12:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" WHERE ("eventos"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos/2]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:13:29) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:14:06) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-01 21:14:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos/2]
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:15:12) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+Completed in 156ms (View: 109, DB: 0) | 200 OK [http://localhost/eventos]
+  [4;36;1mCategoria Create (0.0ms)[0m   [0;1mINSERT INTO "categorias" ("created_at", "updated_at", "nome_categoria") VALUES('2010-09-02 00:19:07', '2010-09-02 00:19:07', 'Evento')[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:19:18) [GET]
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;36;1mCategoria Load (0.0ms)[0m   [0;1mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+  [4;35;1mEvento Create (0.0ms)[0m   [0mINSERT INTO "eventos" ("data", "created_at", "titulo", "updated_at", "descricao", "categoria_id") VALUES('2010-05-11 00:00:00', '2010-09-02 00:20:12', '2. Ruby on Rails Summit LATAM', '2010-09-02 00:20:12', 'Encontro internacional.', 1)[0m
+  [4;36;1mEvento Create (0.0ms)[0m   [0;1mINSERT INTO "eventos" ("data", "created_at", "titulo", "updated_at", "descricao", "categoria_id") VALUES('2010-05-11 00:00:00', '2010-09-02 00:20:27', '2. Ruby on Rails Summit LATAM', '2010-09-02 00:20:27', 'Encontro internacional.', 3)[0m
+
+
+Processing EventosController#index (for 127.0.0.1 at 2010-09-01 21:20:30) [GET]
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" [0m
+Rendering template within layouts/application
+Rendering eventos/index
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categorias" WHERE ("categorias"."id" = 1) [0m
+  [4;36;1mCategoria Load (0.0ms)[0m   [0;1mSELECT * FROM "categorias" WHERE ("categorias"."id" = 3) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-02 09:05:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/4]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-02 16:35:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvento Load (0.0ms)[0m   [0;1mSELECT * FROM "eventos" WHERE ("eventos"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/eventos/2]
+
+
+Processing EventosController#show (for 127.0.0.1 at 2010-09-02 16:35:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mEvento Load (0.0ms)[0m   [0mSELECT * FROM "eventos" WHERE ("eventos"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering eventos/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/eventos/4]
